@@ -1,0 +1,6 @@
+Eine Web-Shop mit Lieferservice Funktion.
+.Registieren bzw. Login/out-Möglichkeit
+.Einfüge bzw. Änderungsmöglichkeit der Gerichte (Admin)
+.Warenkorb-funktion und Speicherung der Daten mit Hilfe MySQL
+.Erstellung einer Rechnung nach einer erfolgreichem Bestellung
+.Bewertungsmöglichkeit für Kunden
