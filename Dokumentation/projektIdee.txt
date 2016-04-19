@@ -1,4 +1,15 @@
-=== Projektidee shayan2013, 2016-04-05 ===
+(neue Projektidee)
+
+OnlineBackgammon
+Es geht um ein Brettspiel(Backgammon) mit untengennanten Funktionen:
+.Registieren bzw. Login/out-Möglichkeit
+.schwierigkeitauswahl(einfach/shwer)
+.verschiede Spielfelder(2 für die erste Version des Spiels), die durch Users gewählt werden können
+.zwei Spielmodi: 1.gegen Computer  2.gegen anderen Spieler(voraussichtlich bei dem 2. Version)
+.Punkte, die nach jedem Gewinn des Users für ihn gerechnet und in seinem Account gespeichert werden
+
+
+(alt)=== Projektidee shayan2013, 2016-04-05 ===(alt)
 
 Eine Web-Shop mit Lieferservice Funktion.
 .Registieren bzw. Login/out-Möglichkeit
