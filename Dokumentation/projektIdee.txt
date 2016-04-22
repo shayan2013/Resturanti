@@ -1,7 +1,6 @@
 (neue Projektidee)
-
-OnlineBackgammon
-Es geht um ein Brettspiel(Backgammon) mit untengennanten Funktionen:
+Durakgammon(Durak & Backgammon)
+Es geht um ein Brettspiel(Backgammon) das nicht mit den Würfeln sondern mit Karten gespielt wird:
 .Registieren bzw. Login/out-Möglichkeit
 .schwierigkeitauswahl(einfach/shwer)
 .verschiede Spielfelder(2 für die erste Version des Spiels), die durch Users gewählt werden können
