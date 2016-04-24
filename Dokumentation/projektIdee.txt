@@ -1,6 +1,10 @@
 (neue Projektidee)
 Durakgammon(Durak & Backgammon)
 Es geht um ein Brettspiel(Backgammon) das nicht mit den Würfeln sondern mit Karten gespielt wird:
+Ein Spieler wirft zwei Karten, der andere Spieler muss die Karten nach Durakregeln verteidigen, 
+werden die Karten verteidigt darf der andere Spieler angreifen, werden die Karten nicht 
+verteidigt darf der Angreifer je nach Karten die er geworfen hat die Steine nach Backgammongesetz 
+bewegen.
 .Registieren bzw. Login/out-Möglichkeit
 .schwierigkeitauswahl(einfach/shwer)
 .verschiede Spielfelder(2 für die erste Version des Spiels), die durch Users gewählt werden können
