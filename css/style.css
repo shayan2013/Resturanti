@@ -1,0 +1,89 @@
+#wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #700000;
+	width: 100%;
+	height: 100%;
+}
+
+#menue-left {
+	width: 50%;
+	height: 170px;
+	background-color: #060;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#Durak {
+	width: 50%;
+	height: 300px;
+	background-color: #333;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+#Backgammon {
+	width: 48%;
+	height: 500px;
+	background-image: url(img/bg1.gif);
+	background-origin: border-box, content-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	float: right;
+	float: top;
+	margin: 5px;
+}
+
+#footer {
+	width: 50%;
+	height: 20px;
+	background-color: #32f;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+/* --------------------  Navigation  -----------------*/
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #660000;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+
