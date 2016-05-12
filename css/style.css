@@ -18,8 +18,12 @@
 
 #Durak {
 	width: 50%;
-	height: 300px;
-	background-color: #333;
+	height: 750px;
+	background-image: url(img/Durakg.jpg);
+	background-origin: border-box, content-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
 	float: left;
 	margin-left: 5px;
 	margin-bottom: 5px;
@@ -27,7 +31,7 @@
 
 #Backgammon {
 	width: 48%;
-	height: 500px;
+	height: 950px;
 	background-image: url(img/bg1.gif);
 	background-origin: border-box, content-box;
 	background-repeat: no-repeat;
@@ -41,7 +45,7 @@
 #footer {
 	width: 50%;
 	height: 20px;
-	background-color: #32f;
+	background-color: #060;
 	float: left;
 	margin-left: 5px;
 	margin-bottom: 5px;
