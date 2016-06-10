@@ -1,11 +1,30 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE HTML>  
-<html>
-<head>
-<style>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css"
+ href="css/style.css">
+ <style>
 .error {color: #FF0000;}
 </style>
-</head>
-<body>  
+	</head>
+	<body  bgcolor="#060">
+				<nav id='cssmenu'>
+					<ul>
+						<li><a href='index.php'>Home</a></li>
+						<li class='active'><a href='#'>Log in</a></li>
+						<li><a href='#'>Spielregeln</a></li>
+						<li><a href='#'>AGB</a></li>
+						<li><a href='#'>Kontakt</a></li>
+					</ul>
+				</nav>
+				</br>
+				</br>
+
 
 <?php
 // define variables and set to empty values
@@ -67,6 +86,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $geschlecht = test_input($_POST["geschlecht"]);
   }
+  
+  if(($name <> "") && ($email <> "") && ($kennwort <> "") && ($geschlecht <> "")){
+	$_SESSION['username'] = $name;
+	$_SESSION['email'] = $email;
+	$_SESSION['kennwort'] = $kennwort;
+	$_SESSION['geschlecht'] = $geschlecht;
+  } else {
+	unset($_SESSION['username']);
+  }
 }
 
 function test_input($data) {
@@ -75,6 +103,8 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
+
 ?>
 
 <h2>Anmeldeformular</h2>
