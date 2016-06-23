@@ -71,10 +71,16 @@ Hier die zweite Schwierigkeit: Sie müssen sich überlegen, was Sie alles streiche
 
 Sie müssen bei der Projektkonzeption also insbesondere an Dinge denken, die in einem Brettspiel nicht vorkommen. Ein Log-In oder eine Highscore-Liste wären nur zwei von vielen Möglichkeiten, die hinzukommen. Die direkte Unterhaltung zwischen Spielern muss dagegen im Bedarfsfall anders gelöst werden. Und Aufgaben wie das Aufnehmen einer Karte, das verschieben eines Elements auf dem Spielbrett fallen häufig bei Computerspielen unter den Tisch.
 
-Wertung 2: Projektbeschreibung: gesamt: n / 10
+Wertung 2: Projektbeschreibung: gesamt: 2 / 10
 - Pro Interaktionsmöglichkeit: 0 
 - Knappe aber klare Beschreibung: 2 
 - Werbeslogans u.ä.: 0 
 - Designaspekte: 0 
 - Voraussetzung bekannten Wissens: 0 
 (Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
+
+===================================
+=== Feedback Alpers, 2016-06-23 ===
+===================================
+
+Leider keine Änderungen an der Beschreibung seit letztem Feedback.
