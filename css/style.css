@@ -91,3 +91,38 @@
   color: #ffffff;
 }
 
+
+/* --------------------  BackgammonTable  -----------------*/
+
+table#backgammonBrett ,th, td {
+	border: 1px solid black;
+	margin-left: 2%;
+	text-align: center;
+	border-spacing: 4%;
+	width: 8%;
+}
+
+table#backgammonBrett caption {
+	font-size: 20px;
+	margin-top: 1%;
+
+}
+
+table#backgammonBrett tr {
+	padding: 4%;
+
+}
+
+table#backgammonBrett td {
+	padding: 2%;
+	margin-left: 2%;
+	/*
+    background-image: url(img/circle-xxl.png); 
+	width: 6%; 
+	height: 30px; 
+	background-repeat: no-repeat; 
+	background-position: top-right; 
+	text-align: center; 
+	vertical-align: top; */
+
+}

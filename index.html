@@ -1,0 +1,344 @@
+
+<?php 
+	session_start();
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css"
+ href="css/style.css">
+	</head>
+	<body>
+		<section id="wrapper">
+			<section id="menue-left">
+				<nav id='cssmenu'>
+					<ul>
+						<li class='active'><a href='#'>Home</a></li>
+						<?php
+							if (isset($_SESSION['loggedIn'])){
+								if ($_GET['auswahl']=="logout"){
+									unset($_SESSION['username']);
+								}
+							}
+							if (isset($_SESSION['username'])) {	
+						?>
+								<li><a href="index.php?auswahl=logout">Log out</a></li>
+						<?php	
+							$_SESSION['loggedIn'] = true;
+							} else {
+								if(isset($_SESSION['loggedIn'])){
+									unset($_SESSION['loggedIn']);
+								}
+						?>
+								<li><a href="anmeldeformular.php?auswahl=login">Log in</a></li>
+						<?php 
+							} 
+						?>
+						<li><a href='#'>Spielregeln</a></li>
+						<li><a href='#'>AGB</a></li>
+						<li><a href='#'>Kontakt</a></li>
+					</ul>
+				</nav>
+				</br>
+				</br>
+				<?php
+					if (isset($_SESSION['username'])) {
+						echo "Herzlich Willkommen ".$_SESSION['username'];
+					} else {
+						echo "Bitte erst einloggen";
+					}
+				?>
+				
+			</section>
+			<section id="Backgammon">
+				<table id="backgammonBrett" style="width:94%">
+					<caption>Backgammon</caption>
+					<tr id="w1">
+					<!-- <td><img src="css/img/circle-xxl.png" alt="w61" height=40px width=100%></img></td> -->
+						<td id="w61">w61</td>
+						<td id="w51">w51</td>
+						<td id="w41">w41</td>
+						<td id="w31">w31</td>
+						<td id="w21">w21</td>
+						<td id="w11">w11</td>
+						<td id="wm1">wm1</td>
+						<td id="W61">W61</td>
+						<td id="W51">W51</td>
+						<td id="W41">W41</td>
+						<td id="W31">W31</td>
+						<td id="W21">W21</td>
+						<td id="W11">W11</td>
+					</tr>
+					<tr id="w2">
+						<td id="w62">w62</td>
+						<td id="w52">w52</td>
+						<td id="w42">w42</td>
+						<td id="w32">w32</td>
+						<td id="w22">w22</td>
+						<td id="w12">w12</td>
+						<td id="wm2">wm2</td>
+						<td id="W62">W62</td>
+						<td id="W52">W52</td>
+						<td id="W42">W42</td>
+						<td id="W32">W32</td>
+						<td id="W22">W22</td>
+						<td id="W12">W12</td>
+					</tr>
+					<tr id="w3">
+						<td id="w63">w63</td>
+						<td id="w53">w53</td>
+						<td id="w43">w43</td>
+						<td id="w33">w33</td>
+						<td id="w23">w23</td>
+						<td id="w13">w13</td>
+						<td id="wm3">wm3</td>
+						<td id="W63">W63</td>
+						<td id="W53">W53</td>
+						<td id="W43">W43</td>
+						<td id="W33">W33</td>
+						<td id="W23">W23</td>
+						<td id="W13">W13</td>
+					</tr>
+					<tr id="w4">
+						<td id="w64">w64</td>
+						<td id="w54">w54</td>
+						<td id="w44">w44</td>
+						<td id="w34">w34</td>
+						<td id="w24">w24</td>
+						<td id="w14">w14</td>
+						<td id="wm4">wm4</td>
+						<td id="W64">W64</td>
+						<td id="W54">W54</td>
+						<td id="W44">W44</td>
+						<td id="W34">W34</td>
+						<td id="W24">W24</td>
+						<td id="W14">W14</td>
+					</tr>
+					<tr id="w5">
+						<td id="w65">w65</td>
+						<td id="w55">w55</td>
+						<td id="w45">w45</td>
+						<td id="w35">w35</td>
+						<td id="w25">w25</td>
+						<td id="w15">w15</td>
+						<td id="wm5">wm5</td>
+						<td id="W65">W65</td>
+						<td id="W55">W55</td>
+						<td id="W45">W45</td>
+						<td id="W35">W35</td>
+						<td id="W25">W25</td>
+						<td id="W15">W15</td>
+					</tr>
+					<tr id="w6">
+						<td id="w66">w66</td>
+						<td id="w56">w56</td>
+						<td id="w46">w46</td>
+						<td id="w36">w36</td>
+						<td id="w26">w26</td>
+						<td id="w16">w16</td>
+						<td id="wm6">wm6</td>
+						<td id="W66">W66</td>
+						<td id="W56">W56</td>
+						<td id="W46">W46</td>
+						<td id="W36">W36</td>
+						<td id="W26">W26</td>
+						<td id="W16">W16</td>
+					</tr>
+					<tr id="w7">
+						<td id="w1">w67</td>
+						<td id="w1">w57</td>
+						<td id="w1">w47</td>
+						<td id="w1">w37</td>
+						<td id="w1">w27</td>
+						<td id="w1">w17</td>
+						<td id="w1">wm7</td>
+						<td id="w1">W67</td>
+						<td id="w1">W57</td>
+						<td id="w1">W47</td>
+						<td id="w1">W37</td>
+						<td id="w1">W27</td>
+						<td id="w1">W17</td>
+					</tr>
+					<tr id="w8">
+						<td id="w1">w68</td>
+						<td id="w1">w58</td>
+						<td id="w1">w48</td>
+						<td id="w1">w38</td>
+						<td id="w1">w28</td>
+						<td id="w1">w18</td>
+						<td id="w1">wm8</td>
+						<td id="w1">W68</td>
+						<td id="w1">W58</td>
+						<td id="w1">W48</td>
+						<td id="w1">W38</td>
+						<td id="w1">W28</td>
+						<td id="w1">W18</td>
+					</tr>
+					<tr id="w9">
+						<td id="w1">w69</td>
+						<td id="w1">w59</td>
+						<td id="w1">w49</td>
+						<td id="w1">w39</td>
+						<td id="w1">w29</td>
+						<td id="w1">w19</td>
+						<td id="w1">wm9</td>
+						<td id="w1">W69</td>
+						<td id="w1">W59</td>
+						<td id="w1">W49</td>
+						<td id="w1">W39</td>
+						<td id="w1">W29</td>
+						<td id="w1">W19</td>
+					</tr>
+					<tr id="b9">
+						<td id="w1">b69</td>
+						<td id="w1">b59</td>
+						<td id="w1">b49</td>
+						<td id="w1">b39</td>
+						<td id="w1">b29</td>
+						<td id="w1">b19</td>
+						<td id="w1">bm9</td>
+						<td id="w1">B69</td>
+						<td id="w1">B59</td>
+						<td id="w1">B49</td>
+						<td id="w1">B39</td>
+						<td id="w1">B29</td>
+						<td id="w1">B19</td>
+					</tr>
+					<tr id="b8">
+						<td id="w1">b68</td>
+						<td id="w1">b58</td>
+						<td id="w1">b48</td>
+						<td id="w1">b38</td>
+						<td id="w1">b28</td>
+						<td id="w1">b18</td>
+						<td id="w1">bm8</td>
+						<td id="w1">B68</td>
+						<td id="w1">B58</td>
+						<td id="w1">B48</td>
+						<td id="w1">B38</td>
+						<td id="w1">B28</td>
+						<td id="w1">B18</td>
+					</tr>
+					<tr id="b7">
+						<td id="w1">b67</td>
+						<td id="w1">b57</td>
+						<td id="w1">b47</td>
+						<td id="w1">b37</td>
+						<td id="w1">b27</td>
+						<td id="w1">b17</td>
+						<td id="w1">bm7</td>
+						<td id="w1">B67</td>
+						<td id="w1">B57</td>
+						<td id="w1">B47</td>
+						<td id="w1">B37</td>
+						<td id="w1">B27</td>
+						<td id="w1">B17</td>
+					</tr>
+					<tr id="b6">
+						<td id="w1">b66</td>
+						<td id="w1">b56</td>
+						<td id="w1">b46</td>
+						<td id="w1">b36</td>
+						<td id="w1">b26</td>
+						<td id="w1">b16</td>
+						<td id="w1">bm6</td>
+						<td id="w1">B66</td>
+						<td id="w1">B56</td>
+						<td id="w1">B46</td>
+						<td id="w1">B36</td>
+						<td id="w1">B26</td>
+						<td id="w1">B16</td>
+					</tr>
+					<tr id="b5">
+						<td id="w1">b65</td>
+						<td id="w1">b55</td>
+						<td id="w1">b45</td>
+						<td id="w1">b35</td>
+						<td id="w1">b25</td>
+						<td id="w1">b15</td>
+						<td id="w1">bm5</td>
+						<td id="w1">B65</td>
+						<td id="w1">B55</td>
+						<td id="w1">B45</td>
+						<td id="w1">B35</td>
+						<td id="w1">B25</td>
+						<td id="w1">B15</td>
+					</tr>
+					<tr id="b4">
+						<td id="w1">b64</td>
+						<td id="w1">b54</td>
+						<td id="w1">b44</td>
+						<td id="w1">b34</td>
+						<td id="w1">b24</td>
+						<td id="w1">b14</td>
+						<td id="w1">bm4</td>
+						<td id="w1">B64</td>
+						<td id="w1">B54</td>
+						<td id="w1">B44</td>
+						<td id="w1">B34</td>
+						<td id="w1">B24</td>
+						<td id="w1">B14</td>
+					</tr>
+					<tr id="b3">
+						<td id="w1">b63</td>
+						<td id="w1">b53</td>
+						<td id="w1">b43</td>
+						<td id="w1">b33</td>
+						<td id="w1">b23</td>
+						<td id="w1">b13</td>
+						<td id="w1">bm3</td>
+						<td id="w1">B63</td>
+						<td id="w1">B53</td>
+						<td id="w1">B43</td>
+						<td id="w1">B33</td>
+						<td id="w1">B23</td>
+						<td id="w1">B13</td>
+					</tr>
+					<tr id="b2">
+						<td id="w1">b62</td>
+						<td id="w1">b52</td>
+						<td id="w1">b42</td>
+						<td id="w1">b32</td>
+						<td id="w1">b22</td>
+						<td id="w1">b12</td>
+						<td id="w1">bm2</td>
+						<td id="w1">B62</td>
+						<td id="w1">B52</td>
+						<td id="w1">B42</td>
+						<td id="w1">B32</td>
+						<td id="w1">B22</td>
+						<td id="w1">B12</td>
+					</tr>
+					<tr id="b1">
+						<td id="w1">b61</td>
+						<td id="w1">b51</td>
+						<td id="w1">b41</td>
+						<td id="w1">b31</td>
+						<td id="w1">b21</td>
+						<td id="w1">b11</td>
+						<td id="w1">bm1</td>
+						<td id="w1">B61</td>
+						<td id="w1">B51</td>
+						<td id="w1">B41</td>
+						<td id="w1">B31</td>
+						<td id="w1">B21</td>
+						<td id="w1">B11</td>
+					</tr>
+					
+				
+				</table>
+			</section>
+			<section id="Durak">
+				<strong>Durak</strong>
+			</section>
+			<section id="footer">
+				<strong> Copyright &copy; <a href="#" title="Copy right">2016</a></strong>
+			</section>
+		</section>
+	</body>
+</html>
