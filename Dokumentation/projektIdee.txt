@@ -4,20 +4,24 @@
 
 Durakgammon(Durak & Backgammon)
 
-Es geht um ein Brettspiel(Backgammon) das nicht mit den Würfeln sondern mit Karten gespielt wird:
-Ein Spieler wirft zwei Karten, der andere Spieler muss die Karten nach Durakregeln verteidigen, 
-werden die Karten verteidigt darf der andere Spieler angreifen, werden die Karten nicht 
-verteidigt darf der Angreifer je nach Karten die er geworfen hat die Steine nach Backgammongesetz 
-bewegen.
+Es geht um ein webbasiertes interaktives Computerspiel das eine Mischung aus zwei Spiele(Backgammon und Durak) realisiert.
+Es wird ein Array(Kartendeck) mit 36 Index(Karten) gestellt. Die Rangfolge der Karten in den Farben ist (hoch zu niedrig): Ass, König, Dame, Bube, 10, 9, 8, 7, 6. 
+Danach wird für jeden Spieler 6 Karten mit einem Zufallsgenerator bestimmt und im Kartenspielfeld dargestellt.
+Gleichzeitig wird eine zufällige Karte als Trumpfkarte dargestellt. 
+Ein Spieler wählt zwei Karten per Maus oder Finger im Touchscreen und dadurch hat er einen Angriff begangen, der andere Spieler muss diesen Angriff abwehren, indem er
+entweder höhere Zahlen(Karten) der gleichen Farbe oder eine Trumpfkarte auswählt.
+Trumpkarten dürfen nur mit höheren Trumpkarten abgewehrt werden. 
+werden die Karten verteidigt darf der andere Spieler 2 Karten wählen und den Gegner angreifen, werden die Karten nicht 
+verteidigt darf der Angreifer je nach Zahlen(Karten) die er gewählt hat die Steine in dem Backgammonspielfeld selectieren(Maus oder Touchgeste) und die
+per Drag and Drop in den neuen Plätzen im Tabelle(Spielfeld) einsetzen. 
 
 Strategien :Backgammon hat zwei Hauptstrategien und zwar :
 1.schnell flüchten
 2.Häuser bauen und abwarten bis der Gegner ein Stein frei macht und dann ihn schlagen bzw. Stein rauswerfen.
 Es gibt zwar eine Kombination aus beiden Strategien, die seltener mit Erfolg endet.
-Darum wird mit einer Funktion die Spielart des Spielers herausgefunden und der Rechner wird ein Gegenstrategie dagegen verwenden.
+Darum wird mit einer Funktion die Spielart des Spielers ergänzt und der Rechner wird ein Gegenstrategie dagegen verwenden.
 Das gleiche gilt beim Durak, halt mit zwei andere Strategien die je nachdem herausgefunden werden usw. usf.
 
-Spielregeln : wer Durak und Backgammon spielen kann wird das Spiel sofort begreifen und es genießen.
 
 Zielgruppe : 12+ (Durak wird heufiger von Jugendlichen belobt, Backgammon dagegen eher von Älteren)
 
@@ -29,7 +33,7 @@ Zielgruppe : 12+ (Durak wird heufiger von Jugendlichen belobt, Backgammon dagege
 .Kontakt
 .Hilfe bzww. Tipps-Bottun
 .Spielregeln mit einem Tutorial
-.
+.Chat Oberfläche(für die Version 2.0)
 .(noch offen)
 
 ====================================================
