@@ -101,3 +101,37 @@ Wertung 2: Projektbeschreibung: gesamt: 2 / 10
 ===================================
 
 Leider keine Änderungen an der Beschreibung seit letztem Feedback.
+
+===================================
+=== Feedback Alpers, 2016-07-22 ===
+===================================
+
+A) Leider ist Ihre Beschreibung immer noch weder für eine Partie mit z.B. 20 Spielern geeignet, noch ist der Bereich Interaktion beschrieben, noch das eigentliche Spiel. Damit stehen Sie effektiv noch am Anfang. Ändern Sie das!
+
+B) Um zu verdeutlichen was mit dem letzten Punkt des ersten Satzes gemeint ist ("noch das eigentliche Spiel"), hier einige Beispiele:
+
+== I ==
+"Spielregeln : wer Durak und Backgammon spielen kann wird das Spiel sofort begreifen und es genießen."
+
+Es ist Ihre Aufgabe, diese Regeln zu erläutern.
+Dieser Satz gehört dagegen ins Marketing und hat mit einer Beschreibung, die als Grundlage für die Entwicklung eines Softwareprojekts im Team dient nichts zu tun.
+
+== II ==
+"Es geht um ein Brettspiel(Backgammon) das nicht mit den Würfeln sondern mit Karten gespielt wird:"
+
+Nein, Sie entwicklen kein Brettspiel, sondern ein webbasiertes interaktives Computerspiel.
+In einem Computerspiel haben wir es nicht mit Karten oder Würfeln zu tun, sondern mit Zufallsgeneratoren.
+
+== III ==
+"Ein Spieler wirft zwei Karten, der andere Spieler muss die Karten nach Durakregeln verteidigen, werden die Karten verteidigt darf der andere Spieler angreifen, werden die Karten nicht verteidigt darf der Angreifer je nach Karten die er geworfen hat die Steine nach Backgammongesetz bewegen."
+
+In der allerersten Aufgabenbeschreibung steht, dass Sie keine Romane, sondern knappe Sätzen nutzen sollen, um die Beschreibung zu erstellen.
+Zerlegen wir also dieses Satzgeflecht:
+
+a) "Ein Spieler wirft zwei Karten,"
+Um Ihnen zu verdeutlichen, wie missverständlich dieser Satzteil ist, hier eine Frage: Wirft er die Karten aus dem Fenster, zu Boden, in den Kamin, damit sie da verbrennen? Oder wohin wirft er die Karten?
+
+b) "der andere Spieler muss die Karten nach Durakregeln verteidigen,"
+Und hier haben Sie genau die Aufgabe nicht gelöst, die Sie in der Beschreibung lösen sollen: Sie sollen die Regeln (und dabei die Bestandteile) des Spiels erklären, sodass diese später ins Programm umgesetzt werden können.
+
+Beim Rest sollte jetzt klar sein, was Ihre nächste Aufgabe ist. Beim aktuellen Stand der Beschreibung macht die Arbeit an den strukturellen Elemente bzw. an HTML keinen Sinn. Arbeiten Sie deshalb zunächst die Beschreibung so um, dass basierend darauf ein Projekt von einer anderen Person entwickelt werden kann.
