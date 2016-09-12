@@ -139,3 +139,9 @@ b) "der andere Spieler muss die Karten nach Durakregeln verteidigen,"
 Und hier haben Sie genau die Aufgabe nicht gelöst, die Sie in der Beschreibung lösen sollen: Sie sollen die Regeln (und dabei die Bestandteile) des Spiels erklären, sodass diese später ins Programm umgesetzt werden können.
 
 Beim Rest sollte jetzt klar sein, was Ihre nächste Aufgabe ist. Beim aktuellen Stand der Beschreibung macht die Arbeit an den strukturellen Elemente bzw. an HTML keinen Sinn. Arbeiten Sie deshalb zunächst die Beschreibung so um, dass basierend darauf ein Projekt von einer anderen Person entwickelt werden kann.
+
+===================================
+=== Feedback Alpers, 2016-09-12 ===
+===================================
+
+Ende Juli habe ich ausdrückblich betont, dass Sie (die Nachricht ging an alle Teilnehmer am Projekt 1) regelmäßig mindestens fünf Stunden pro Woche ins Projekt investieren müssen, da das Projekt sonst als Fehlversuch gewertet wird. In den letzten acht Wochen haben Sie lediglich einmal am Projekt gearbeitet und Ihre Änderungen entsprechen ungefähr einem Aufwand von einer Stunde. Bei dieser Arbeitsweise sind Sie in ungefähr zehn Jahren fertig. Damit ist es ein Fehlversuch.
